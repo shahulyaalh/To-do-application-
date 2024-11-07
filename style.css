@@ -128,19 +128,27 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 15px;
-
- 
 }
+.register-button{
+  display: flex;
+  justify-content: center;
+  margin-left: 110%;
+  margin-top: 35px;
 
+}
 /* button:hover {
   background-color: #1cbb63;
 } */
 
 .register-link {
   margin-top: 15px;
-  text-align: left;  /* Left align the register link */
+  text-align: left;  /* Keep the login link left aligned */
 }
-
+.txt{
+  position: relative;
+  top:20px;
+  left:10px;
+}
 .register-link a {
   color: #007bff;
   text-decoration: none;
@@ -149,20 +157,22 @@ button {
 .register-link a:hover {
   text-decoration: underline;
 }
-/* Styling the <a> tag to look like a button */
+
+/* Center the register button specifically */
 .register-link a.button {
-  display: inline-block;
+  display: block; /* Make it a block element to take up full width of the container */
   padding: 12px;
   background-color: #007bff;
   color: white;
   text-align: center;
+  justify-items: center;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
+  width: 200px; /* You can adjust this value to control the width of the button */
+  margin: 0 auto; /* Center the button horizontally */
 }
 
 .register-link a.button:hover {
